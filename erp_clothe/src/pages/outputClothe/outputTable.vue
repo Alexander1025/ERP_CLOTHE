@@ -1,13 +1,13 @@
 <template>
     <div class="outputTransferWrap">
-        <a-tabs default-active-key="1" @change="callback">
+        <a-tabs default-active-key="1">
             <a-tab-pane key="1" tab="店铺">
-                <a-table :columns="columns" :data-source="data">
+                <a-table :columns="columns" :data-source="data" :row-selection="rowSelection">
                     <a slot="name" slot-scope="text">{{ text }}</a>
                 </a-table>
             </a-tab-pane>
             <a-tab-pane key="2" tab="商品列表" force-render>
-                <a-table :columns="columns" :data-source="data">
+                <a-table :columns="columns" :data-source="data" :row-selection="rowSelection">
                     <a slot="name" slot-scope="text">{{ text }}</a>
                 </a-table>
             </a-tab-pane>
@@ -84,6 +84,21 @@ export default {
       data,
       columns,
     };
+  },
+  computed: {
+    rowSelection() {
+      return {
+        onChange: (selectedRowKeys, selectedRows) => {
+          console.log(`selectedRowKeys: ${selectedRowKeys}`, 'selectedRows: ', selectedRows);
+        },
+        getCheckboxProps: record => ({
+          props: {
+            disabled: record.name === 'Disabled User', // Column configuration not to be checked
+            name: record.name,
+          },
+        }),
+      };
+    },
   },
 };
 </script>

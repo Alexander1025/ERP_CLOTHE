@@ -129,77 +129,92 @@ const columns = [
         key: 'tags',
         dataIndex: 'tags',
         scopedSlots: { customRender: 'tags' },
+        width: 60
     },
     {
         title: '排产信息',
         key: 'action',
         scopedSlots: { customRender: 'action' },
+        width: 60
     },
     {
         title: '订货单号',
         dataIndex: 'age',
-        key: 'age',
+        // key: 'age',
+        width: 60
     },
     {
         title: '客户名称',
-        dataIndex: 'age',
-        key: 'age',
+        dataIndex: 'age1',
+        // key: 'age',
+        width: 60
     },
     {
         title: '排产日期',
-        dataIndex: 'age',
-        key: 'age',
+        dataIndex: 'age2',
+        // key: 'age',
+        width: 60
     },
     {
         title: '商品编号',
-        dataIndex: 'age',
-        key: 'age',
+        dataIndex: 'age3',
+        // key: 'age',
+        width: 60
     },
     {
         title: '颜色',
-        dataIndex: 'age',
-        key: 'age',
+        dataIndex: 'age4',
+        // key: 'age',
+        width: 60
     },
     {
         title: '版型编号',
-        dataIndex: 'age',
-        key: 'age',
+        dataIndex: 'age5',
+        // key: 'age',
+        width: 60
     },
     {
         title: '生产合计',
-        dataIndex: 'age',
-        key: 'age',
+        dataIndex: 'age6',
+        // key: 'age',
+        width: 60
     },
     {
         title: '未完工合计',
-        dataIndex: 'age',
-        key: 'age',
+        dataIndex: 'age7',
+        // key: 'age',
+        width: 60
     },
     {
         title: 'S',
-        dataIndex: 'age',
-        key: 'age',
+        dataIndex: 'age8',
+        // key: 'age',
+        width: 60
     },
     {
         title: 'M',
-        dataIndex: 'age',
-        key: 'age',
+        dataIndex: 'age9',
+        // key: 'age',
+        width: 60
     },
     {
         title: 'XL',
-        dataIndex: 'age',
-        key: 'age',
+        dataIndex: 'age10',
+        // key: 'age',
+        width: 60
     },
     {
         title: 'XXL',
-        dataIndex: 'age',
-        key: 'age',
+        dataIndex: 'age11',
+        // key: 'age',
+        width: 60
     },
     {
         title: 'Address',
         dataIndex: 'address',
         key: 'address',
         ellipsis: true,
+        width: 60
     },
     
 ];
@@ -209,18 +224,51 @@ const data = [
         key: '1',
         name: '47894526154564',
         age: 32,
+        age1: 32,
+        age2: 3232,
+        age3: 12,
+        age4: 123,
+        age5: 123,
+        age6: 2236,
+        age7: 32322,
+        age8: 23,
+        age9: 31232,
+        age10: 31232,
+        age11: 31232,
         address: 'New York No. 1 Lake Park',
     },
     {
         key: '2',
         name: '44152643122321',
-        age: 42,
+        age: 32,
+        age1: 32,
+        age2: 3232,
+        age3: 12,
+        age4: 15623,
+        age5: 4567,
+        age6: 2236,
+        age7: 32456322,
+        age8: 23,
+        age9: 31232,
+        age10: 31232,
+        age11: 33431232,
         address: 'London No. 1 Lake Park',
     },
     {
         key: '3',
         name: '127438192738283',
         age: 32,
+        age1: 32,
+        age2: 435,
+        age3: 12,
+        age4: 123,
+        age5: 134523,
+        age6: 345,
+        age7: 32322,
+        age8: 435,
+        age9: 87,
+        age10: 31232,
+        age11: 31232,
         address: 'Sidney No. 1 Lake Park',
     },
 ];

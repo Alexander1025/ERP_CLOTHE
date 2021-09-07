@@ -4,7 +4,7 @@
             <template
                 v-for="col in ['name', 'age', 'address']"
                 :slot="col"
-                slot-scope="text, record, index"
+                slot-scope="text, record"
             >
                 <div :key="col">
                     <a-input
@@ -19,7 +19,7 @@
                     </template>
                 </div>
             </template>
-            <template slot="operation" slot-scope="text, record, index">
+            <template slot="operation" slot-scope="text, record">
                 <div class="editable-row-operations">
                     <span v-if="record.editable">
                         <a @click="() => save(record.key)">保存</a>
@@ -55,7 +55,7 @@ const columns = [
     },
     {
         title: 'XXL',
-        dataIndex: 'address',
+        dataIndex: 'addressasd',
         width: '20%',
         scopedSlots: { customRender: 'address' },
     },
@@ -73,6 +73,7 @@ for (let i = 0; i < 100; i++) {
         name: `${i}`,
         age: 32,
         address: `${i}`,
+        addressasd: `${i+5}`,
     });
 }
 export default {
